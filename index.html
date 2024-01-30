@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/Logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main class="principal">        
+        <section class="texto">
+            <img class="logo" src="./img/Logo.svg" alt="Logo">
+            <textarea name="ingresar-texto" id="ingresar-texto" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <article class="principal-inferior">
+                <img class="advertencia" src="./img/advertencia.svg" alt="advertencia">
+                <div class="botones">
+                    <button onclick="encriptar();" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
+                </div>
+            </article>
+        </section>
+        <section class="mensaje">
+            <article id="bloque-mensaje" class="contenido-mensaje">
+                <img id="muñeco" src="./img/Muñeco.png" alt="muñeco">
+                <h3 id="ningun-mensaje">Ningún Mensaje fue encontrado</h3>
+                <p id="texto-a-copiar">Ingresa el texto que desees encriptar o desencriptar</p>
+            </article>    
+            <button onclick="copiar();" id="copiar" style="visibility: hidden;">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; María Rosa Gervasoni MRG - <span id="year"></span></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
